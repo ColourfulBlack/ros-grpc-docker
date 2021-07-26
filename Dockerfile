@@ -2,7 +2,6 @@ FROM ubuntu:bionic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-
 RUN apt-get update -q && \
     apt-get upgrade -yq && \
     apt-get install -yq wget curl git build-essential lsb-release locales bash-completion autoconf libtool pkg-config libssl-dev make cmake g++ && \
